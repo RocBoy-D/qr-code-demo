@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+import QrReader from 'react-qr-reader';
+
 import './App.css';
 
 function App() {
+  const [scannerVisible, setScannerVisible] = useState(false);
+  const [qrCodes, setQRcodes] = useState([]);
+
+  const showScanner = () => setScannerVisible(true);
+
+  const handleScan = data => {
+    if (data) {
+      const newQRcodes = [...qrCodes, data];
+
+      setQRcodes(newQRcodes);
+      setScannerVisible(false);
+    }
+  };
+
+  const handleError = error => console.log(error);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <button onClick={showScanner}>Scan QR code</button>
+      {qrCodes.map((qrCode, i) => (
+        <p key={i}>{qrCode}</p>
+      ))}
+      {scannerVisible && (
+        <QrReader
+          onScan={handleScan}
+          onError={handleError}
+        />
+      )}
     </div>
   );
 }
