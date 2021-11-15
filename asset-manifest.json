@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/qr-code-demo/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/qr-code-demo/static/js/main.6e192891.chunk.js",
+    "main.js.map": "/qr-code-demo/static/js/main.6e192891.chunk.js.map",
+    "runtime-main.js": "/qr-code-demo/static/js/runtime-main.e848ca78.js",
+    "runtime-main.js.map": "/qr-code-demo/static/js/runtime-main.e848ca78.js.map",
+    "static/js/2.a13a2d32.chunk.js": "/qr-code-demo/static/js/2.a13a2d32.chunk.js",
+    "static/js/2.a13a2d32.chunk.js.map": "/qr-code-demo/static/js/2.a13a2d32.chunk.js.map",
+    "static/js/3.a87e5fc1.chunk.js": "/qr-code-demo/static/js/3.a87e5fc1.chunk.js",
+    "static/js/3.a87e5fc1.chunk.js.map": "/qr-code-demo/static/js/3.a87e5fc1.chunk.js.map",
+    "index.html": "/qr-code-demo/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/qr-code-demo/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.a13a2d32.chunk.js.LICENSE.txt": "/qr-code-demo/static/js/2.a13a2d32.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/qr-code-demo/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e848ca78.js",
+    "static/js/2.a13a2d32.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.6e192891.chunk.js"
+  ]
+}
